@@ -8,7 +8,7 @@ public class SomeObject {
  
 // Untrusted code
 synchronized (SomeObject.class) {
-  while (true) {
+  while (true) {                      // In this section an attacker could grab and hold onto the lock
     Thread.sleep(Integer.MAX_VALUE); // Indefinitely delay someObject
   }
 }

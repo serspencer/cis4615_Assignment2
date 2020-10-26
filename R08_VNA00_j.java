@@ -22,7 +22,7 @@ final class ControlledStop implements Runnable {
 //Correct Method (Volatile)
 
 final class ControlledStop implements Runnable {
-  private volatile boolean done = false;
+  private volatile boolean done = false;  //The flag is volatile so it can be seen by other threads
   
   @Override public void run() {
     while (!done) {

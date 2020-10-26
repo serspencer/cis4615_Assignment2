@@ -40,7 +40,7 @@ final class RequestHandler {
   private final ServerSocket server;
   private final ExecutorService exec;
  
-  private RequestHandler(int port, int poolSize) throws IOException {
+  private RequestHandler(int port, int poolSize) throws IOException {  //Pool size is usecd to limit the number of concurrently executed threads
     server = new ServerSocket(port);
     exec = Executors.newFixedThreadPool(poolSize);
   }

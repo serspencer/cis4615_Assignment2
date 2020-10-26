@@ -16,4 +16,6 @@ do {
     } catch (FileNotFoundException e ) {
         //Ask for a different file name
     }
-} while ( validFlag != true);
+} while ( validFlag != true);  //This alwows for waiting until a proper file is found.  Otherwise the program would just end with and have to be restarted.
+//  THis is Rule 07 for Eception Behavior
+//  Specifically Do not suppress or ignore checked exceptions
